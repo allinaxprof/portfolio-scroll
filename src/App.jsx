@@ -25,17 +25,19 @@ function App() {
       <Card pic={chose} title="two" />
       <Card pic={chose} title="three" />
       
-      <button 
-        className="text-white rounded-2xl border-2 border-white p-2"
-        onMouseOver = {handleOver} 
-        onMouseLeave = {handleOver} 
-        onClick = {handleOver}>
-          Over Here!
-      </button>
-      <Button 
-        onMouseOver = {(e) => handleOver(e)} 
-        onMouseLeave = {(e) => handleOver(e)} 
-        onClick = {(e) => handleOver(e)}></Button>
+      <div className="flex justify-center">
+        <button 
+          className="text-white rounded-2xl border-2 border-white p-2"
+          onMouseOver = {handleOver} 
+          onMouseLeave = {handleOver} 
+          onClick = {handleOver}>
+            Over Here!
+        </button>
+        <Button 
+          onMouseOver = {(e) => handleOver(e)} 
+          onMouseLeave = {(e) => handleOver(e)} 
+          onClick = {(e) => handleOver(e)}></Button>
+      </div>
     </>
   )
 }

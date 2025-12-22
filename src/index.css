@@ -1,4 +1,8 @@
-@import "node_modules/tailwindcss/index.css";
+@import "tailwindcss";
+
+body {
+  background-color: black;
+}
 
 .card {
   border: 1px solid white;
