@@ -1,43 +1,15 @@
-import './index.css'; 
-
-import Card from "./Card.jsx"
-import Button from "./Button.jsx"
-
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
-import {useState} from "react"
+import './index.css'
+import Main from './router.jsx'
+import { Link } from 'react-router-dom'
 
 function App() {
-
-  let [isOver, setIsOver] = useState(false);
-  const handleOver = () => {setIsOver(!isOver)};
-
-  let chose = viteLogo;
-
-  if (isOver) {
-    chose = reactLogo;
-  }
-
   return (
     <>
-      <Card pic={chose} title="one" />
-      <Card pic={chose} title="two" />
-      <Card pic={chose} title="three" />
-      
-      <div className="flex justify-center">
-        <button 
-          className="text-white rounded-2xl border-2 border-white p-2"
-          onMouseOver = {handleOver} 
-          onMouseLeave = {handleOver} 
-          onClick = {handleOver}>
-            Over Here!
-        </button>
-        <Button 
-          onMouseOver = {(e) => handleOver(e)} 
-          onMouseLeave = {(e) => handleOver(e)} 
-          onClick = {(e) => handleOver(e)}></Button>
-      </div>
+      <nav className="p-4">
+        <Link to="/" className="mr-4">Home</Link>
+        <Link to="/QA">QA</Link>
+      </nav>
+      <Main />
     </>
   )
 }
