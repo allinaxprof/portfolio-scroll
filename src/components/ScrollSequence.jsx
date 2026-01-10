@@ -91,7 +91,7 @@ export default function ScrollSequence() {
     <section className="sequence h-screen">
       <canvas
         ref={canvasRef}
-        className="fixed top-0 left-0 pointer-events-none -z-10 w-full h-screen"
+        className="flex w-full h-screen"
       />
     </section>
   );
