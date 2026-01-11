@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import viteLogo from '/vite.svg';
+import reactLogo from '../assets/react.svg'
+import { Link } from 'react-router-dom'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,6 +53,7 @@ export default function ScrollSequence2() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".sequence",
+                endtrigger: "bottom",
                 start: "top top",
                 end: "+=300%",
                 pin: true,
@@ -75,7 +79,19 @@ export default function ScrollSequence2() {
             if (!img) return;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             drawImageCover(ctx, img, canvas);
+            if (frameRef.current.frame % 2 === 0) {
+                document.querySelector(".logoLink").href = "/QA";
+                document.querySelector(".logo").src = reactLogo;
+            } else {
+                document.querySelector(".logoLink").href = "/";
+                document.querySelector(".logo").src = viteLogo;
+            }
         }
+
+        //Failure
+        //tl.to(".logo", {
+        //    src: (frameRef.current.frame % 2 === 0) ? {reactLogo} : {viteLogo},
+        //});
 
         tl.to(frameRef.current, {
             frame: TOTAL_FRAMES - 1,
@@ -92,11 +108,16 @@ export default function ScrollSequence2() {
     }, []);
 
     return (
-    <section className="sequence h-screen">
+    <div className="sequence h-screen flex place-items-center">
+      <a href="/" className="logoLink z-10 absolute">
+        <img src={viteLogo} alt="logo" className="logo z-10 mx-[75vw]"></img>
+      </a>
       <canvas
         ref={canvasRef}
-        className="flex w-full h-screen"
-      />
-    </section>
+        className="fixed w-full h-screen z-0"
+      >
+        Your browser does not support the HTML5 canvas tag.
+      </canvas>
+    </div>
   );
 }

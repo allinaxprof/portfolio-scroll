@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <nav className="p-4">
-        <Link to="/" className="mr-4">Home</Link>
-        <Link to="/QA">QA</Link>
-        <Link to="/Intro" className="ml-4">Intro</Link>
+        <a href="/" className="mr-4">Home</a>
+        <a href="/QA">QA</a>
+        <a href="/Intro" className="ml-4">Intro</a>
       </nav>
       <Main />
     </>
