@@ -2,8 +2,9 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import viteLogo from '/vite.svg';
-import reactLogo from '../assets/react.svg'
-import { Link } from 'react-router-dom'
+import reactLogo from '../assets/react.svg';
+import Pfp from '../assets/Pfp.png';
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,12 +80,20 @@ export default function ScrollSequence2() {
             if (!img) return;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             drawImageCover(ctx, img, canvas);
-            if (frameRef.current.frame % 2 === 0) {
+
+            //change links and logos based on frame
+            if ([0,1,2].includes(frameRef.current.frame)) {
                 document.querySelector(".logoLink").href = "/QA";
                 document.querySelector(".logo").src = reactLogo;
+                document.querySelector(".label").innerText = "QA";
+            } else if ([3,4,5].includes(frameRef.current.frame)) {
+                document.querySelector(".logoLink").href = "/";
+                document.querySelector(".logo").src = Pfp;
+                document.querySelector(".label").innerText = "Home";
             } else {
                 document.querySelector(".logoLink").href = "/";
                 document.querySelector(".logo").src = viteLogo;
+                document.querySelector(".label").innerText = "Home";
             }
         }
 
@@ -109,8 +118,9 @@ export default function ScrollSequence2() {
 
     return (
     <div className="sequence h-screen flex place-items-center">
-      <a href="/" className="logoLink z-10 absolute">
-        <img src={viteLogo} alt="logo" className="logo z-10 mx-[75vw]"></img>
+      <a href="/" className="logoLink z-10 mx-[75vw] items-center absolute">
+        <img src={viteLogo} alt="logo" className="logo z-10 w-16"></img>
+        <p className="label text-black">Home</p>
       </a>
       <canvas
         ref={canvasRef}

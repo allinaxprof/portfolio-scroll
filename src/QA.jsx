@@ -20,7 +20,7 @@ function QA() {
             <Card pic={chose} title="two" />
             <Card pic={chose} title="three" />
 
-            <div className="flex justify-center">
+            <div className="flex items-center justify-center gap-4 my-8">
                 <button
                     className="text-white rounded-2xl border-2 border-white p-2"
                     onMouseOver={handleOver}
