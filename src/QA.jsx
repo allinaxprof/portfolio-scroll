@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import './index.css'
-
 import Card from './components/Card.jsx'
 import Button from './components/Button.jsx'
 import reactLogo from './assets/react.svg'
@@ -22,7 +20,7 @@ function QA() {
 
             <div className="flex items-center justify-center gap-4 my-8">
                 <button
-                    className="text-white rounded-2xl border-2 border-white p-2"
+                    className="rounded-2xl border-2 p-2"
                     onMouseOver={handleOver}
                     onMouseLeave={handleOver}
                     onClick={handleOver}

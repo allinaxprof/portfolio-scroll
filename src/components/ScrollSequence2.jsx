@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import viteLogo from '/vite.svg';
 import reactLogo from '../assets/react.svg';
 import Pfp from '../assets/Pfp.png';
-import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,9 +90,9 @@ export default function ScrollSequence2() {
                 document.querySelector(".logo").src = Pfp;
                 document.querySelector(".label").innerText = "Home";
             } else {
-                document.querySelector(".logoLink").href = "/";
+                document.querySelector(".logoLink").href = "/Intro";
                 document.querySelector(".logo").src = viteLogo;
-                document.querySelector(".label").innerText = "Home";
+                document.querySelector(".label").innerText = "Intro";
             }
         }
 
@@ -118,9 +117,9 @@ export default function ScrollSequence2() {
 
     return (
     <div className="sequence h-screen flex place-items-center">
-      <a href="/" className="logoLink z-10 mx-[75vw] items-center absolute">
+      <a href="/Intro" className="logoLink z-10 mx-[75vw] items-center absolute">
         <img src={viteLogo} alt="logo" className="logo z-10 w-16"></img>
-        <p className="label text-black">Home</p>
+        <p className="label text-black">Intro</p>
       </a>
       <canvas
         ref={canvasRef}

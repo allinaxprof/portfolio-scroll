@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import ScrollSequence2 from './components/ScrollSequence2.jsx';
-
 import './index.css'
 
 export default function Home() {

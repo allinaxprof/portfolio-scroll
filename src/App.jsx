@@ -1,4 +1,3 @@
-import './index.css'
 import Main from './router.jsx'
 import { Link } from 'react-router-dom'
 
@@ -9,6 +8,7 @@ function App() {
         <a href="/" className="mr-4">Home</a>
         <a href="/QA">QA</a>
         <a href="/Intro" className="ml-4">Intro</a>
+        <a href="/About" className="ml-4">About</a>
       </nav>
       <Main />
     </>
