@@ -8,10 +8,10 @@ import About from './About';
 
 const Main = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/QA" element={<QA />} />
-    <Route path="/Intro" element={<Intro />} />
-    <Route path="/About" element={<About />}></Route>
+    <Route exact path="/" element={<Home />} />
+    <Route exact path="/QA" element={<QA />} />
+    <Route exact path="/Intro" element={<Intro />} />
+    <Route exact path="/About" element={<About />}></Route>
   </Routes>
 );
 
