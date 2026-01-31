@@ -2,7 +2,7 @@
 function Tile(props) {
 
   return (
-    <a href="/QA" className="text-center">
+    <a href={props.link} className="text-center">
         <div className="title-image 
             flex justify-center items-center 
             w-auto mb-4 mx-auto 

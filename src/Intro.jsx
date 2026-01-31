@@ -21,22 +21,26 @@ export default function Intro() {
       <div className='intro-grid grid grid-cols-3 gap-10'>
         <Tile 
           pic={Pfp}
-          title="Project One"
-          description="Description for Project One."
+          title="Assignment 1"
+          link = "/Assignment1"
+          description="two dozen, object, steps, narrative"
         />
         <Tile 
           pic={reactLogo}
           title="Project Two"
+          link = "/QA"
           description="Description for Project Two."
         />
         <Tile 
           pic={viteLogo}
           title="Project Three"
+          link = "/QA"
           description="Description for Project Three."
         />
         <Tile 
           pic={Pfp}
           title="Project Four"
+          link = "/QA"
           description="Description for Project Four."
         />
       </div>

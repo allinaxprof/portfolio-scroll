@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-.Home {
+.Home .body{
   @apply bg-black text-white;
 }
