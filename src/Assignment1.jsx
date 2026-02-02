@@ -115,7 +115,18 @@ export default function Assignment1() {
 
         <div className="mb-16">
             <h2 className="text-2xl font-bold m-4">Narrative Photography</h2>
-            <img src="/narrative-final.jpg" className='w-150 m-auto' alt="Unsupported image"></img>
+            <img src="/narrative-final.jpg" className='w-100 m-auto' alt="Unsupported image"></img>
+            <details>
+                <summary className="text-sm italic mt-4">Click for explanation</summary>
+                <p className="text-sm text-left italic mt-4 w-[40vw] m-auto">
+                    A student has just fallen asleep while working all day on homework from the perspective of another person.
+                    Note the multiple drinks, pen rolling away from the hand, and computer not yet asleep (and almost out of battery).
+                </p>
+                <p className="text-sm text-left italic mt-4 w-[40vw] m-auto">
+                    3-point light: point light from the computer, backlight from my roommate's vanity mirror across from the computer, and 
+                    a very weak fill light from my roommates lamp placed about 45 degrees behind me to the right.
+                </p>
+            </details>
         </div>
 
         <div>
