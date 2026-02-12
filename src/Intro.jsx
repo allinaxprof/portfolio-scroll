@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
 import Tile from './components/Tile.jsx';
-import Pfp from './assets/Pfp.png';
+import Pfp from '/Pfp.png';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 

@@ -3,11 +3,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import viteLogo from '/vite.svg';
 import reactLogo from '../assets/react.svg';
-import Pfp from '../assets/Pfp.png';
+import Pfp from '/Pfp.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TOTAL_FRAMES = 8;
+const TOTAL_FRAMES = 12;
 
 //maintain original aspect ration
 function drawImageCover(ctx, img, canvas) {
@@ -25,7 +25,7 @@ function drawImageCover(ctx, img, canvas) {
     drawWidth = canvas.width;
     drawHeight = img.height * (canvas.width / img.width);
     x = 0;
-    y = (canvas.height - drawHeight) / 2;
+    y = 0;
   }
 
   ctx.drawImage(img, x, y, drawWidth, drawHeight);
@@ -68,7 +68,7 @@ export default function ScrollSequence2() {
         // Preload images
         for (let i = 0; i < TOTAL_FRAMES; i++) {
             const img = new Image();
-            img.src = `/frames/frame_${String(i).padStart(4, "0")}.jpg`;
+            img.src = `/frames/frame_${String(i).padStart(4, "0")}.jpeg`;
             imagesRef.current.push(img);
         }
 
@@ -81,14 +81,14 @@ export default function ScrollSequence2() {
             drawImageCover(ctx, img, canvas);
 
             //change links and logos based on frame
-            if ([0,1,2].includes(frameRef.current.frame)) {
-                document.querySelector(".logoLink").href = "/QA";
+            if ([0,1,2,3].includes(frameRef.current.frame)) {
+                document.querySelector(".logoLink").href = "/Intro";
                 document.querySelector(".logo").src = reactLogo;
-                document.querySelector(".label").innerText = "QA";
-            } else if ([3,4,5].includes(frameRef.current.frame)) {
-                document.querySelector(".logoLink").href = "/";
+                document.querySelector(".label").innerText = "Intro";
+            } else if ([4,5,6,7].includes(frameRef.current.frame)) {
+                document.querySelector(".logoLink").href = "/About";
                 document.querySelector(".logo").src = Pfp;
-                document.querySelector(".label").innerText = "Home";
+                document.querySelector(".label").innerText = "About";
             } else {
                 document.querySelector(".logoLink").href = "/Intro";
                 document.querySelector(".logo").src = viteLogo;
