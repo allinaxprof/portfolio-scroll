@@ -119,7 +119,7 @@ export default function ScrollSequence2() {
     <div className="sequence h-screen flex place-items-center">
       <a href="/Intro" className="logoLink z-10 mx-[75vw] items-center absolute">
         <img src={viteLogo} alt="logo" className="logo z-10 w-16"></img>
-        <p className="label text-black">Intro</p>
+        <p className="label text-white">Intro</p>
       </a>
       <canvas
         ref={canvasRef}

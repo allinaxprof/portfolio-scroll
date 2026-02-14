@@ -3,6 +3,7 @@ import Card from './components/Card.jsx'
 import Button from './components/Button.jsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Navbar from './components/Navbar.jsx'
 
 function QA() {
 
@@ -14,6 +15,7 @@ function QA() {
 
     return (
         <>
+            <Navbar color="white"></Navbar>
             <Card pic={chose} title="one" />
             <Card pic={chose} title="two" />
             <Card pic={chose} title="three" />

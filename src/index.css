@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
-.Home .body{
+/* Home Page Styles */
+.home-page {
   @apply bg-black text-white;
+}
+
+/* Intro Page Styles */
+.intro-page {
+  @apply bg-gray-300 text-black;
+}
+
+/* About Page Styles */
+.about-page {
+  @apply bg-white text-black;
 }

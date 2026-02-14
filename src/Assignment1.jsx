@@ -1,5 +1,6 @@
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
+import Navbar from './components/Navbar.jsx';
 
 /*
 const photos = [
@@ -83,56 +84,55 @@ const steps = [
 export default function Assignment1() {
 
   return (
-    <div className="assignment-container w-[70vw] mt-8 m-auto mb-8 text-center">
-        <h1 className="text-3xl font-bold mb-8">Assignment 1</h1>
-
-        <div className="mb-16">
-            <h2 className="text-2xl font-bold m-4">Two Dozen</h2>
-            <RowsPhotoAlbum photos={twodozen} />
-            <p className="text-sm italic mt-4">
-                Taken at by the Oculus at the World Trade Center.
-            </p>
-        </div>
-        
-        <div className="mb-16">
-            <h2 className="text-2xl font-bold m-4">Twelve Abstracts</h2>
-            <RowsPhotoAlbum photos={abstracts} />
-            <details>
-                <summary className="text-sm italic mt-4">Click to reveal item</summary>
+    <div>
+        <Navbar color="white"></Navbar>
+        <div className="assignment-container w-[70vw] mt-8 m-auto mb-8 text-center">
+            <h1 className="text-3xl font-bold mb-8">Assignment 1</h1>
+            <div className="mb-16">
+                <h2 className="text-2xl font-bold m-4">Two Dozen</h2>
+                <RowsPhotoAlbum photos={twodozen} />
                 <p className="text-sm italic mt-4">
-                    Yellow post-it notes.
+                    Taken at by the Oculus at the World Trade Center.
                 </p>
-            </details>
-        </div>
-
-        <div className="mb-16">
-            <h2 className="text-2xl font-bold m-4">Steps</h2>
-            <RowsPhotoAlbum photos={steps} />
-            <p className="text-sm italic mt-4">
-                Taken at every intersection from near the NYC Supreme Court through Chinatown.
-            </p>
-        </div>
-
-        <div className="mb-16">
-            <h2 className="text-2xl font-bold m-4">Narrative Photography</h2>
-            <img src="/narrative-final.jpg" className='w-100 m-auto' alt="Unsupported image"></img>
-            <details>
-                <summary className="text-sm italic mt-4">Click for explanation</summary>
-                <p className="text-sm text-left italic mt-4 w-[40vw] m-auto">
-                    A student has just fallen asleep while working all day on homework from the perspective of another person.
-                    Note the multiple drinks, pen rolling away from the hand, and computer not yet asleep (and almost out of battery).
-                </p>
-                <p className="text-sm text-left italic mt-4 w-[40vw] m-auto">
-                    3-point light: point light from the computer, backlight from my roommate's vanity mirror across from the computer, and 
-                    a very weak fill light from my roommates lamp placed about 45 degrees behind me to the right.
-                </p>
-            </details>
-        </div>
-
-        <div>
-            <p>&#169; Allina Xiao</p>
-        </div>
+            </div>
         
+            <div className="mb-16">
+                <h2 className="text-2xl font-bold m-4">Twelve Abstracts</h2>
+                <RowsPhotoAlbum photos={abstracts} />
+                <details>
+                    <summary className="text-sm italic mt-4">Click to reveal item</summary>
+                    <p className="text-sm italic mt-4">
+                        Yellow post-it notes.
+                    </p>
+                </details>
+            </div>
+            <div className="mb-16">
+                <h2 className="text-2xl font-bold m-4">Steps</h2>
+                <RowsPhotoAlbum photos={steps} />
+                <p className="text-sm italic mt-4">
+                    Taken at every intersection from near the NYC Supreme Court through Chinatown.
+                </p>
+            </div>
+            <div className="mb-16">
+                <h2 className="text-2xl font-bold m-4">Narrative Photography</h2>
+                <img src="/narrative-final.jpg" className='w-100 m-auto' alt="Unsupported image"></img>
+                <details>
+                    <summary className="text-sm italic mt-4">Click for explanation</summary>
+                    <p className="text-sm text-left italic mt-4 w-[40vw] m-auto">
+                        A student has just fallen asleep while working all day on homework from the perspective of another person.
+                        Note the multiple drinks, pen rolling away from the hand, and computer not yet asleep (and almost out of battery).
+                    </p>
+                    <p className="text-sm text-left italic mt-4 w-[40vw] m-auto">
+                        3-point light: point light from the computer, backlight from my roommate's vanity mirror across from the computer, and
+                        a very weak fill light from my roommates lamp placed about 45 degrees behind me to the right.
+                    </p>
+                </details>
+            </div>
+            <div>
+                <p>&#169; Allina Xiao</p>
+            </div>
+        
+        </div>
     </div>
   )
 }

@@ -1,48 +1,32 @@
 import React, { useEffect, useRef } from 'react'
 
+import Navbar from './components/Navbar.jsx';
 import Tile from './components/Tile.jsx';
-import Pfp from '/Pfp.png';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import assignment1 from '/twodozen/twodozen-final-06.jpg';
 
 export default function Intro() {
   
   return (
-    <div className="intro-container w-[50vw] mt-8 m-auto gap-y-4">
+    <div className="intro-page">
+      <Navbar color="white"></Navbar>
+      <div className="intro-container w-[50vw] pt-8 pb-8 m-auto gap-y-4">
       <div className="mb-10 text-center">
-        <h1 className="text-3xl font-bold mb-4">This is my intro</h1>
+        <h1 className="text-3xl font-bold mb-4">Projects</h1>
         <p className=''>
-          Welcome to my website! Here, you'll find a collection of my projects,
+          Here, you'll find a collection of my projects,
           blog posts, and other interesting content that I've created. Feel free to
-          explore and learn more about what I do.
+          explore and learn more about the work I've done.
         </p>
       </div>
 
       <div className='intro-grid grid grid-cols-3 gap-10'>
         <Tile 
-          pic={Pfp}
-          title="Assignment 1"
+          pic={assignment1}
+          title="Environment Photos"
           link = "/Assignment1"
           description="two dozen, object, steps, narrative"
         />
-        <Tile 
-          pic={reactLogo}
-          title="Project Two"
-          link = "/QA"
-          description="Description for Project Two."
-        />
-        <Tile 
-          pic={viteLogo}
-          title="Project Three"
-          link = "/QA"
-          description="Description for Project Three."
-        />
-        <Tile 
-          pic={Pfp}
-          title="Project Four"
-          link = "/QA"
-          description="Description for Project Four."
-        />
+      </div>
       </div>
     </div>
   )
