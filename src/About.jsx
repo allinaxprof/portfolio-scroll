@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from './components/Navbar.jsx';
 import Pfp from '/Pfp.png';
+import insta from '/instagram-icon-black.png';
 
 export default function About() {
   
@@ -12,7 +13,10 @@ export default function About() {
         <img src={Pfp} alt="picture" className='m-auto h-[20vh]'></img>
         <div className="">
           <h1 className="text-3xl font-bold mb-4">Hello!</h1>
-          <p className="text-gray-600">This is the about page.</p>
+          <p className="text-gray-600 mb-2">See my short portfolio below.</p>
+          <a href="https://www.instagram.com/xxallinaxart/">
+            <img className='w-5' src={insta}></img>
+          </a>
         </div>
       </div>
     </div>
