@@ -16,6 +16,13 @@ export default function About() {
           <p className="text-gray-600 mb-2">See my short portfolio below.</p>
           <a href="https://www.instagram.com/xxallinaxart/">
             <img className='w-5' src={insta}></img>
+            <a 
+              href="https://www.flaticon.com/free-icons/instagram-logo" 
+              title="instagram logo icons"
+              className="text-xs"
+            >
+              Instagram logo icons created by Freepik - Flaticon
+            </a>
           </a>
         </div>
       </div>
