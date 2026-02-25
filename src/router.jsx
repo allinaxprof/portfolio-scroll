@@ -5,7 +5,7 @@ import Home from './Home';
 import QA from './QA';
 import Intro from './Intro';
 import About from './About';
-import Assignment1 from './Assignment1';
+import Assignment1 from './projects/Assignment1';
 import Blog from './Blog';
 import Resume from './blogs/Resume';
 
@@ -15,7 +15,7 @@ const Main = () => (
     <Route exact path="/QA" element={<QA />} />
     <Route exact path="/Intro" element={<Intro />} />
     <Route exact path="/About" element={<About />}></Route>
-    <Route exact path="/Assignment1" element={<Assignment1 />} />
+    <Route exact path="/projects/Assignment1" element={<Assignment1 />} />
     <Route exact path="/Blog" element={<Blog />} />
     <Route exact path="/Resume" element={<Resume />} />
   </Routes>

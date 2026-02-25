@@ -14,7 +14,7 @@ export default function Intro() {
         <h1 className="text-3xl font-bold mb-4">Projects</h1>
         <p className=''>
           Here, you'll find a collection of my projects,
-          blog posts, and other interesting content that I've created. Feel free to
+          games, and other interesting content that I've created. Feel free to
           explore and learn more about the work I've done.
         </p>
       </div>
@@ -23,7 +23,7 @@ export default function Intro() {
         <Tile 
           pic={assignment1}
           title="Environment Photos"
-          link = "/Assignment1"
+          link = "projects/Assignment1"
           description="two dozen, object, steps, narrative"
         />
       </div>

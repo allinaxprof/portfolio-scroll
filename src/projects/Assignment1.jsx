@@ -1,6 +1,6 @@
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
-import Navbar from './components/Navbar.jsx';
+import Navbar from '../components/Navbar.jsx';
 
 /*
 const photos = [
