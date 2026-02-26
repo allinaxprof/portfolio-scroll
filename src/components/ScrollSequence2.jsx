@@ -82,13 +82,13 @@ export default function ScrollSequence2() {
 
             //change links and logos based on frame
             if ([0,1,2,3].includes(frameRef.current.frame)) {
-                document.querySelector(".logoLink").href = "/Intro";
-                document.querySelector(".logo").src = reactLogo;
-                document.querySelector(".label").innerText = "Intro";
-            } else if ([4,5,6,7].includes(frameRef.current.frame)) {
                 document.querySelector(".logoLink").href = "/About";
-                document.querySelector(".logo").src = Pfp;
+                document.querySelector(".logo").src = reactLogo;
                 document.querySelector(".label").innerText = "About";
+            } else if ([4,5,6,7].includes(frameRef.current.frame)) {
+                document.querySelector(".logoLink").href = "/Blog";
+                document.querySelector(".logo").src = Pfp;
+                document.querySelector(".label").innerText = "Blog";
             } else {
                 document.querySelector(".logoLink").href = "/Intro";
                 document.querySelector(".logo").src = viteLogo;
@@ -117,15 +117,16 @@ export default function ScrollSequence2() {
 
     return (
     <div className="sequence h-screen flex place-items-center">
-      <a href="/Intro" className="logoLink z-10 mx-[75vw] items-center absolute">
+      <a href="/About" className="logoLink z-10 mx-[75vw] items-center absolute">
         <img src={viteLogo} alt="logo" className="logo z-10 w-16"></img>
-        <p className="label text-white">Intro</p>
+        <p className="label text-white">Art</p>
       </a>
       <canvas
         ref={canvasRef}
         className="fixed w-full h-screen z-0"
       >
         Your browser does not support the HTML5 canvas tag.
+          Please use the navigation links to explore my site instead.
       </canvas>
     </div>
   );

@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar color="black" />
       <div className="p-8 text-center">
         <h1 className="text-3xl font-bold mb-4">Welcome!</h1>
-        <p className="text-gray-600">Explore my world below!</p>
+        <p className="text-gray-600">Scroll down to explore my world!</p>
       </div>
 
       <ScrollSequence2 />
