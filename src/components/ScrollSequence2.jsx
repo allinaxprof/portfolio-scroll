@@ -84,7 +84,7 @@ export default function ScrollSequence2() {
             if ([0,1,2,3].includes(frameRef.current.frame)) {
                 document.querySelector(".logoLink").href = "/About";
                 document.querySelector(".logo").src = reactLogo;
-                document.querySelector(".label").innerText = "About";
+                document.querySelector(".label").innerText = "Art";
             } else if ([4,5,6,7].includes(frameRef.current.frame)) {
                 document.querySelector(".logoLink").href = "/Blog";
                 document.querySelector(".logo").src = Pfp;
