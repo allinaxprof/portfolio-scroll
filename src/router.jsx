@@ -8,6 +8,7 @@ import About from './About';
 import Assignment1 from './projects/Assignment1';
 import Blog from './Blog';
 import Resume from './blogs/Resume';
+import Kuleshov from './projects/Kuleshov';
 
 const Main = () => (
   <Routes>
@@ -18,6 +19,7 @@ const Main = () => (
     <Route exact path="/projects/Assignment1" element={<Assignment1 />} />
     <Route exact path="/Blog" element={<Blog />} />
     <Route exact path="/Resume" element={<Resume />} />
+    <Route exact path="/projects/Kuleshov" element={<Kuleshov />} />
   </Routes>
 );
 
