@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import Navbar from './components/Navbar.jsx';
 import Tile from './components/Tile.jsx';
 import assignment1 from '/twodozen/twodozen-final-06.jpg';
+import transWeek from '/transaware/transawareweek-y2k.jpeg';
 //import Pfp from 'Pfp.png';
 
 export default function Intro() {
@@ -28,10 +29,10 @@ export default function Intro() {
           description="two dozen, object, steps, narrative"
         />
         <Tile 
-          pic={assignment1}
-          title="Kuleshov"
-          link = "projects/kuleshov"
-          description="two dozen, object, steps, narrative"
+          pic={transWeek}
+          title="Banner Designs"
+          link = "projects/TransAwarenessWeek"
+          description="Iterations and process for NYU LGBTQ+ Center Application"
         />
       </div>
       </div>

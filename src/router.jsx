@@ -9,6 +9,7 @@ import Assignment1 from './projects/Assignment1';
 import Blog from './Blog';
 import Resume from './blogs/Resume';
 import Kuleshov from './projects/Kuleshov';
+import TransWeekApp from './projects/transWeekApp';
 
 const Main = () => (
   <Routes>
@@ -20,6 +21,7 @@ const Main = () => (
     <Route exact path="/Blog" element={<Blog />} />
     <Route exact path="/Resume" element={<Resume />} />
     <Route exact path="/projects/Kuleshov" element={<Kuleshov />} />
+    <Route exact path ="/projects/TransAwarenessWeek" element={<TransWeekApp />} />
   </Routes>
 );
 
