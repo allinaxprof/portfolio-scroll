@@ -90,9 +90,9 @@ export default function ScrollSequence2() {
                 document.querySelector(".logo").src = Pfp;
                 document.querySelector(".label").innerText = "Blog";
             } else {
-                document.querySelector(".logoLink").href = "/Intro";
+                document.querySelector(".logoLink").href = "/projects";
                 document.querySelector(".logo").src = viteLogo;
-                document.querySelector(".label").innerText = "Intro";
+                document.querySelector(".label").innerText = "Projects";
             }
         }
 

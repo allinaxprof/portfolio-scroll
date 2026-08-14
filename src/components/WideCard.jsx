@@ -5,11 +5,15 @@ export default function WideCard(props) {
                 <h1 className="text-xl font-bold mb-5">
                     {props.title}
                 </h1>
-                <p className="description">
+                <div className="description">
                     {props.description}
-                </p>
+                </div>
             </div>
-            <img src={props.pic} alt="y2k design" className='w-full h-auto mb-8'></img>
+            <img
+                src={props.pic}
+                alt="y2k design"
+                className={`w-full mb-8 ${props.imgHeight ? `${props.imgHeight} object-contain` : 'h-auto'}`}
+            ></img>
         </div>
     )
 }

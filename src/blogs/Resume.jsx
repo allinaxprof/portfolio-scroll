@@ -18,6 +18,9 @@ export default function Resume() {
 
                 i.e. I haven't gotten around to this yet
             </p>
+            <p>
+              In the meantime, visit my <a className="text-blue-500 hover:underline" href="https://www.linkedin.com/in/allina-x-67bab02a2/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>!
+            </p>
         </div>
       </div>
     </div>

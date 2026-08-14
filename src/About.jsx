@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import Navbar from './components/Navbar.jsx';
 import Pfp from '/Pfp.png';
 import insta from '/instagram-icon-black.png';
+import linkedin from '/socialLinkedIn.png';
 
 export default function About() {
   
@@ -12,18 +13,35 @@ export default function About() {
       <div className="p-8 grid grid-cols-2 gap-10">
         <img src={Pfp} alt="picture" className='m-auto h-[20vh]'></img>
         <div className="">
-          <h1 className="text-3xl font-bold mb-4">Hello!</h1>
-          <p className="text-gray-600 mb-2">See my short portfolio below.</p>
-          <a href="https://www.instagram.com/xxallinaxart/">
-            <img className='w-5' src={insta}></img>
+          <h1 className="text-3xl font-bold mb-4">Hello, I'm Allina!</h1>
+          <p className="text-gray-600 mb-2">See my abbreviated portfolio below.</p>
+
+          <div className='flex space-x-4 mb-2'>
+            <a href="https://www.instagram.com/xxallinaxart/" target="_blank" rel="noopener noreferrer">
+              <img className='w-5' src={insta}></img>
+            </a>
+            <a href="https://www.linkedin.com/in/allina-x-67bab02a2/" target="_blank" rel="noopener noreferrer">
+              <img className='w-5' src={linkedin}></img>
+            </a>
+          </div>
+
             <a 
               href="https://www.flaticon.com/free-icons/instagram-logo" 
               title="instagram logo icons"
-              className="text-xs"
+              className="text-[0.6rem]"
+              target="_blank" rel="noopener noreferrer"
             >
-              Instagram logo icons created by Freepik - Flaticon
+              <p>Instagram logo icons created by Freepik - Flaticon</p>
             </a>
-          </a>
+            <a 
+              href="https://www.flaticon.com/authors/aleksei-ryazancev" 
+              title="linkedin logo icons"
+              className="text-[0.6rem]"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <p>LinkedIn logo icon created by Aleksei Ryazancev</p>
+            </a>
+            
         </div>
       </div>
     </div>
